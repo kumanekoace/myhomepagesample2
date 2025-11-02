@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>熊谷 淳｜皮膚科クリニック（準備中）</title>
+  <meta name="description" content="皮膚科クリニック開業準備中の個人サイト。プロフィール、診療方針、診療内容、クイズ、連絡先を掲載。" />
+  <meta name="color-scheme" content="light dark">
+  <style>
+    :root{--bg:#ffffff;--fg:#111827;--muted:#6b7280;--brand:#2563eb;--brand-2:#1e40af;--card:#f3f4f6;--ring:#93c5fd}
+    @media (prefers-color-scheme: dark){:root{--bg:#0b0f16;--fg:#e5e7eb;--muted:#9ca3af;--brand:#60a5fa;--brand-2:#93c5fd;--card:#111827;--ring:#3b82f6}}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family: system-ui, -apple-system, Segoe UI, Roboto, "Hiragino Kaku Gothic ProN", Meiryo, "Noto Sans JP", sans-serif;line-height:1.65}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.7);backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid rgba(0,0,0,.06)}
+    @media (prefers-color-scheme: dark){header{background:rgba(11,15,22,.6);border-bottom-color:rgba(255,255,255,.06)}}
+    .container{max-width:1024px;margin-inline:auto;padding-inline:20px}
+    .nav{display:flex;align-items:center;gap:16px;justify-content:space-between;height:56px}
+    .nav a{font-weight:600}
+    .hero{padding:56px 0 24px;display:grid;gap:16px}
+    .hero h1{font-size:clamp(24px,4.2vw,40px);line-height:1.2;margin:0}
+    .badge{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--ring);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--brand-2);background:color-mix(in oklab, var(--ring) 20%, transparent)}
+    section{padding:28px 0;border-top:1px dashed rgba(0,0,0,.08)}
+    @media (prefers-color-scheme: dark){section{border-top-color:rgba(255,255,255,.08)}}
+    h2{font-size:clamp(18px,3.2vw,28px);margin:0 0 12px}
+    .grid{display:grid;gap:14px}
+    @media(min-width:900px){.grid.cols-2{grid-template-columns:1fr 1fr}}
+    .card{background:var(--card);border:1px solid rgba(0,0,0,.06);border-radius:14px;padding:16px}
+    @media (prefers-color-scheme: dark){.card{border-color:rgba(255,255,255,.08)}}
+    .muted{color:var(--muted)}
+    .list{padding-left:1.1em}
+    .list li{margin:6px 0}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;border:1px solid var(--brand);background:var(--brand);color:white;font-weight:600;cursor:pointer}
+    .btn.ghost{background:transparent;color:var(--brand)}
+    .cta{display:flex;gap:10px;flex-wrap:wrap}
+    .footer{padding:28px 0;color:var(--muted);font-size:14px}
+    /* quiz */
+    .quiz-q{margin:14px 0}
+    .choices{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{border:1px solid rgba(0,0,0,.12);padding:8px 12px;border-radius:999px;cursor:pointer;background:transparent}
+    .chip[aria-pressed="true"]{outline:2px solid var(--ring);background:color-mix(in oklab, var(--ring) 18%, transparent)}
+    .result{font-weight:700;margin-top:6px}
+    .ok{color:#10b981}
+    .ng{color:#ef4444}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container nav" aria-label="メインメニュー">
+      <a href="#top" class="logo" style="font-weight:800">熊谷  淳<span class="sr-only"> トップ</span></a>
+      <div class="menu" role="menubar" aria-label="セクションメニュー" style="display:flex;gap:12px;flex-wrap:wrap">
+        <a role="menuitem" href="#profile">プロフィール</a>
+        <a role="menuitem" href="#policy">診療方針</a>
+        <a role="menuitem" href="#services">診療内容</a>
+        <a role="menuitem" href="#news">お知らせ</a>
+        <a role="menuitem" href="#quiz">クイズ</a>
+        <a role="menuitem" href="#contact">連絡先</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top" class="container">
+    <div class="hero">
+      <span class="badge">皮膚科クリニック｜開業準備中</span>
+      <h1>地域の「かかりつけ皮膚科」を目指して。<br>アレルギーとフットケアに強みがあります。</h1>
+      <p class="muted">このページは <a href="https://kohtaronishimura.github.io/nishikohh-sunabaco-site/" rel="noopener" target="_blank">参考サイト</a> をベースに、GitHub Pages でそのまま公開できる1枚のHTMLで作成しています。</p>
+      <div class="cta">
+        <a class="btn" href="#contact">受診・ご相談はこちら</a>
+        <a class="btn ghost" href="#quiz">院長クイズで知る</a>
+      </div>
+    </div>
+
+    <section id="profile">
+      <h2>プロフィール</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <p>院長：熊谷 淳（皮膚科医）</p>
+          <ul class="list">
+            <li>専門：<strong>アレルギー、フットケア</strong>、一般皮膚科</li>
+            <li>関心：待ち時間・混雑可視化、医療×ITの活用、情報発信</li>
+            <li>目標：安心して相談できる地域皮膚科の実現</li>
+          </ul>
+        </div>
+        <div class="card">
+          <p>このサイトでは、開院準備の歩みや診療方針、診療内容をわかりやすく紹介します。将来的には混雑状況の表示やオンライン問診など、便利な機能も追加予定です。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="policy">
+      <h2>診療方針</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3 style="margin:0 0 8px">1) エビデンスとわかりやすい説明</h3>
+          <p class="muted">ガイドラインに基づく標準治療と、生活背景に沿ったご提案。</p>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 8px">2) アレルギーとフットケアに強み</h3>
+          <p class="muted">アトピー性皮膚炎、接触皮膚炎、足爪・角化症などを丁寧に診ます。</p>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 8px">3) 通いやすさ</h3>
+          <p class="muted">混雑緩和・待ち時間見える化を導入予定。再診はオンライン活用も検討。</p>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 8px">4) 誠実な情報発信</h3>
+          <p class="muted">医療広告ガイドラインに配慮した、誤解のない表現に努めます。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>診療内容</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3 style="margin:0 0 8px">一般皮膚科</h3>
+          <ul class="list">
+            <li>湿疹・かぶれ、にきび、じんましん、いぼ、みずむし 等</li>
+            <li>小児皮膚科：とびひ、あせも、虫さされ 等</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 8px">アレルギー</h3>
+          <ul class="list">
+            <li>接触皮膚炎の評価、パッチテストの相談</li>
+            <li>食物・薬剤アレルギーの初期対応と専門医療機関への連携</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 8px">フットケア</h3>
+          <ul class="list">
+            <li>巻き爪・陥入爪の相談、胼胝・鶏眼のケア</li>
+            <li>白癬・爪白癬の診断と治療</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 8px">美容皮膚（準備中）</h3>
+          <p class="muted">機器導入・メニューは準備が整い次第ご案内します。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="news">
+      <h2>お知らせ（ダミー）</h2>
+      <div class="card">
+        <ul class="list">
+          <li><time datetime="2025-11-02">2025/11/02</time> サイトを公開しました（仮）。</li>
+          <li><time datetime="2025-12-01">2025/12/01</time> 開院予定地の情報を準備中です。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="quiz" aria-labelledby="quiz-title">
+      <h2 id="quiz-title">院長クイズ</h2>
+      <p class="muted">自己紹介がわりの三択クイズ。選んで「答え合わせ」を押してください。</p>
+
+      <div class="card" id="quiz-box">
+        <!-- Q1 -->
+        <div class="quiz-q" data-q="1" data-answer="3">
+          <h3 style="margin:0 0 6px">第1問　私の職業は何でしょうか?</h3>
+          <div class="choices" role="group" aria-label="第1問の選択肢">
+            <button class="chip" type="button" data-choice="1">1. 消化器内科医</button>
+            <button class="chip" type="button" data-choice="2">2. 整形外科医</button>
+            <button class="chip" type="button" data-choice="3">3. 皮膚科医</button>
+            <button class="chip" type="button" data-choice="4">4. 皮尿器科医</button>
+            <button class="chip" type="button" data-choice="5">5. 精神科医</button>
+          </div>
+          <p class="muted" style="margin:.3rem 0 0">解説：<em>アレルギー、フットケアが得意です。</em></p>
+          <div class="result" aria-live="polite"></div>
+        </div>
+        <hr style="opacity:.2">
+        <!-- Q2 -->
+        <div class="quiz-q" data-q="2" data-answer="3">
+          <h3 style="margin:0 0 6px">第2問　普段から一番愛用している道具は？</h3>
+          <div class="choices" role="group" aria-label="第2問の選択肢">
+            <button class="chip" type="button" data-choice="1">1. 聴診器</button>
+            <button class="chip" type="button" data-choice="2">2. 打腱器</button>
+            <button class="chip" type="button" data-choice="3">3. ダーモスコープ</button>
+            <button class="chip" type="button" data-choice="4">4. 18G針</button>
+            <button class="chip" type="button" data-choice="5">5. 拳</button>
+          </div>
+          <p class="muted" style="margin:.3rem 0 0">解説：<em>18Gもよく使います。拳は最終手段だよ。</em></p>
+          <div class="result" aria-live="polite"></div>
+        </div>
+        <hr style="opacity:.2">
+        <!-- Q3 -->
+        <div class="quiz-q" data-q="3" data-answer="3">
+          <h3 style="margin:0 0 6px">第3問　プログラミングで達成したい目標は？</h3>
+          <div class="choices" role="group" aria-label="第3問の選択肢">
+            <button class="chip" type="button" data-choice="1">1. HP作成</button>
+            <button class="chip" type="button" data-choice="2">2. 在庫管理アプリ</button>
+            <button class="chip" type="button" data-choice="3">3. クリニックの待ち時間・混雑状況表示アプリ</button>
+            <button class="chip" type="button" data-choice="4">4. お金持ち</button>
+          </div>
+          <div class="result" aria-live="polite"></div>
+        </div>
+
+        <div style="display:flex;gap:8px;margin-top:14px">
+          <button id="check" class="btn" type="button">答え合わせ</button>
+          <button id="reset" class="btn ghost" type="button">リセット</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>連絡先</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <p>ご相談・お問い合わせはメールで承ります。</p>
+          <p><a href="mailto:info@example-clinic.jp" class="btn">メールで問い合わせる</a></p>
+          <p class="muted">※ 実際の開院情報・所在地等は決まり次第、こちらに掲載します。</p>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 8px">所在地（準備中）</h3>
+          <p class="muted">地図やアクセス方法、駐車場のご案内を掲載予定です。</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <p>© <span id="year"></span> Jun Kumagai. All rights reserved.</p>
+    </div>
+  </main>
+
+  <script>
+    // 年号
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // クイズ処理
+    const box = document.getElementById('quiz-box');
+    const selections = new Map(); // q -> choice
+
+    box.addEventListener('click', (e)=>{
+      const b = e.target.closest('.chip');
+      if(!b) return;
+      const qEl = b.closest('.quiz-q');
+      const qId = qEl.dataset.q;
+      // toggle pressed in this question group
+      qEl.querySelectorAll('.chip').forEach(ch => ch.setAttribute('aria-pressed','false'));
+      b.setAttribute('aria-pressed','true');
+      selections.set(qId, b.dataset.choice);
+      qEl.querySelector('.result').textContent = '';
+    });
+
+    document.getElementById('check').addEventListener('click', ()=>{
+      document.querySelectorAll('.quiz-q').forEach(qEl =>{
+        const ans = qEl.dataset.answer;
+        const chosen = selections.get(qEl.dataset.q);
+        const result = qEl.querySelector('.result');
+        if(!chosen){
+          result.textContent = '未選択です';
+          result.className = 'result ng';
+          return;
+        }
+        if(chosen === ans){
+          result.textContent = '正解！';
+          result.className = 'result ok';
+        } else {
+          result.textContent = `不正解… 正解は ${ans} 番です`;
+          result.className = 'result ng';
+        }
+      })
+    });
+
+    document.getElementById('reset').addEventListener('click', ()=>{
+      selections.clear();
+      document.querySelectorAll('.chip').forEach(ch=>ch.setAttribute('aria-pressed','false'));
+      document.querySelectorAll('.result').forEach(r=>r.textContent='');
+    });
+  </script>
+</body>
+</html>
